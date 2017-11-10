@@ -1,5 +1,8 @@
+var path = require('path')
+
 module.exports = function (config) {
   'use strict'
+
   config.set({
 
     basePath: '',
@@ -26,6 +29,16 @@ module.exports = function (config) {
             loader: 'vue-loader'
           }
         ]
+      },
+      resolve: {
+        extensions: ['.js', '.vue', '.json'],
+        modules: [path.resolve(__dirname, './node_modules')],
+        alias: {
+          quasar: 'quasar-framework/dist/quasar.esm.js'
+        }
+      },
+      resolveLoader: {
+        modules: [path.join(__dirname, './node_modules')]
       }
     },
 
