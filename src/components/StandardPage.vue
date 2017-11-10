@@ -17,7 +17,7 @@
         <q-route-tab slot="title" icon="local_florist" to="/forms/flowers" replace label="Flowers" />
       </q-tabs>
     </q-toolbar>
-
+    <SimpleText />
     <!-- Left Side Panel
     <div slot="left">
       <q-list no-border link inset-delimiter>
@@ -65,6 +65,7 @@ import {
   QTabs,
   QRouteTab
 } from 'quasar'
+import SimpleText from './SimpleText'
 
 export default {
   components: {
@@ -72,8 +73,10 @@ export default {
     QToolbar,
     QToolbarTitle,
     QTabs,
-    QRouteTab
+    QRouteTab,
+    SimpleText
   },
+  name: 'StandardPage',
   data () {
     return {}
   },
