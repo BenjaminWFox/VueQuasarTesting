@@ -14,6 +14,11 @@ import Vue from 'vue'
 import Quasar from 'quasar'
 import router from './router'
 import store from 'store'
+import ParseScripts from 'data/index'
+
+const p = new ParseScripts()
+
+console.log(p)
 
 Vue.config.productionTip = false
 Vue.use(Quasar) // Install Quasar Framework
